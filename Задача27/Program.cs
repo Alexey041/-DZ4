@@ -30,7 +30,6 @@ void FillArray(int[] array)
 {
     int num = 0;
     int pow = 1;
-    int pow1 = ten - 1;
     for (int i = 0; i < array.Length; i++)
     {
         num = (a % Convert.ToInt32(Math.Pow(10, pow)))
