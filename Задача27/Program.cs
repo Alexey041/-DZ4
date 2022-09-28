@@ -26,7 +26,7 @@ while (division <= a)
 
 int[] array = new int[ten];
 
-void FillArray(int[] array)
+void FillArrayInvert(int[] array)
 {
     int num = 0;
     int pow = 1;
@@ -35,8 +35,7 @@ void FillArray(int[] array)
         num = (a % Convert.ToInt32(Math.Pow(10, pow)))
         / Convert.ToInt32(Math.Pow(10, i));
         pow++;
-        array[ten - 1] = num;
-        ten--;
+        array[i] = num;
     }
     
 }
@@ -64,5 +63,5 @@ void PrintArray(int[] array)
     }
 }
 
-FillArray(array);
+FillArrayInvert(array);
 Console.Write($" {Summ(array)}");
